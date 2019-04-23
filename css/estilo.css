@@ -1,0 +1,28 @@
+body{
+	background-color: red;
+
+}
+#cultura{
+	width: 1500px;
+
+
+}
+*{
+	margin: 0;
+}
+h2{
+	color: white;
+}
+h3{
+	background-color: #42ebf4;
+}
+p{
+	background-color: #99562c;
+}
+h4{
+	background-color: red;
+}
+#qq{
+	background-image: url(../imagens/imagen.jpg);
+	width: 100%;
+}
