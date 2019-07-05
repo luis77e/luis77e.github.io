@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello Javascript world</title>
+    <style>
+    body{
+        background-color: darkblue;
+    }
+    
+    </style>
+</head>
+<body>
+    <script>
+        //comentario de uma linha
+        /*comentario de multiplas linhas o comando abaixo so é visto no console do navegador*/
+
+    console.log("Alo ha mundo Javascript");
+    //abre uma janela
+    //alert("Saudades do q a gente ainda nao viveu");
+    window.onload = function(){
+        document.querySelector("h1").textContent = "js é massa";
+        var h1 = document.querySelector("h1");
+        h1.innerHTML = "<em>js</em> não é java";
+        h1.style = "font-size: 50px; \
+        color: deepSkyBlue;";//Saudades
+        //Variavel moderna local 
+        let h1_2 = document.querySelector(".segundoH1");
+        let h1_3 = document.querySelector("#terceiroH1");
+
+        h1_2.style = "font-size: 10px";
+        h1_3.style = "text-shadow: 3px 3px 5px black";
+
+        let h_uns = document.querySelectorAll("h1");
+
+        for(let i=0; i < h_uns.length; i++)
+            h_uns[i].style = "border: 2px dashed white";
+
+            
+
+    }
+    
+    </script>
+     <h1>indrotução a linguagem Javascript</h1>
+     <h1 class="segundoH1">segundoH1</h1>
+     <h1 id="terceiroH1">terceiroH1</h1>
+
+     <h2>Exemplo da Lâmpada</h2>
+
+     <button onclick="document.querySelector('#lampada').src = 'acesa.jpg'">Acender</button>
+     <img src="apagada.jpg" id="lampada"
+         onmouseover="acender()" onmouseout="apagar()">
+     <button onclick="document.querySelector('#lampada').src = 'apagada.jpg'">Apagar</button>
+ 
+     </div>
+     <script>
+         var lâmpada = document.querySelector("#lampada");
+         function acender(){lâmpada.src = "acessa.jpg"}
+         function apagar(){lâmpada.src = "apagada.jpg"}
+        
+        </script>
+</body>
+</html>
